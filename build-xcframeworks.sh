@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 
-platforms=(iOS "iOS Simulator" macOS)
+platforms=(iOS "iOS Simulator")
 BUILD_DIR=build
 
 rm -rf $BUILD_DIR

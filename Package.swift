@@ -13,12 +13,12 @@ let package = Package(
         .binaryTarget(
             name: "AWSKinesis",
             url: "https://github.com/cricut/aws-sdk-ios/releases/download/2.18.0_kinesis_only/AWSKinesis.xcframework.zip",
-            checksum: "18f3b34f07918982aa3ba3e9c05422787e3d364bb9ef5bf5d74c7552de0490c0"
+            checksum: "d2237a1701341683c2c4ca0f577fe4c31be9ef32b455407307711dac8baca5ab"
         ),
         .binaryTarget(
             name: "AWSCore",
             url: "https://github.com/cricut/aws-sdk-ios/releases/download/2.18.0_kinesis_only/AWSCore.xcframework.zip",
-            checksum: "cb10781bf4c62963ad61065eb4bcbf75fe1e396b2fb551e7d7e43369d8a80c8e"
+            checksum: "e9730372c97ec46ded095738f780992e1a9218a195700820bf2fbc35dc339161"
         ),
     ]
 )
