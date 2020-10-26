@@ -23,7 +23,7 @@ for platform in $platforms; do
         -archivePath $BUILD_DIR/$platform.xcarchive \
         | { xcpretty || cat }
     kinesisFlags+=(-framework $BUILD_DIR/$platform.xcarchive/Products/Library/Frameworks/AWSKinesis.framework)
-    coreFlags+=(-framework $BUILD_DIR/$platform.xcarchive/Products/Library/Frameworks/AWSKinesis.framework)
+    coreFlags+=(-framework $BUILD_DIR/$platform.xcarchive/Products/Library/Frameworks/AWSCore.framework)
 done
 
 xcodebuild -create-xcframework $kinesisFlags -output $BUILD_DIR/AWSKinesis.xcframework

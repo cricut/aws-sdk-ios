@@ -2,8 +2,8 @@
 import PackageDescription
 
 enum Checksums: String {
-  case kinesis = "c08398867c6ef3af3e268b58209ac23a3daf8aa7b809a2a258097b99a4a51108" // AUTO GENERATED
-  case core = "cc4892e0a1a50a1a4e3da62536c1a1bb8205f80f9004b18f49e1d754ea2356bf" // AUTO GENERATED
+  case kinesis = "e57c8711cd1a67451c630348ee394a053f7911352af1192150a6454408d19bc7" // AUTO GENERATED
+  case core = "604acac4dd46fd349516be81a6f0bfd30f75e9d83f4c1e1eb67bf60861fae0da" // AUTO GENERATED
 }
 
 let package = Package(
