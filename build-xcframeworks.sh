@@ -35,6 +35,6 @@ xcodebuild -create-xcframework $coreFlags -output $BUILD_DIR/AWSCore.xcframework
 KINESIS_CHECKSUM=$(swift package compute-checksum build/AWSKinesis.xcframework.zip)
 CORE_CHECKSUM=$(swift package compute-checksum build/AWSCore.xcframework.zip)
 sed -E \
-    -e 's#"AWSKinesis":.* // AUTO GENERATED#"AWSKinesis": "'$KINESIS_CHECKSUM'" // AUTO GENERATED#' \
-    -e 's#"AWSCore":.* // AUTO GENERATED#"AWSKinesis": "'$CORE_CHECKSUM'" // AUTO GENERATED#' \
+    -e 's#case kinesis = .* // AUTO GENERATED#case kinesis = "'$KINESIS_CHECKSUM'" // AUTO GENERATED#' \
+    -e 's#case core = .* // AUTO GENERATED#case core = "'$CORE_CHECKSUM'" // AUTO GENERATED#' \
     -i '' Package.swift

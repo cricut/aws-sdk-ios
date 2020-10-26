@@ -48,3 +48,4 @@ __pycache__/
 awsconfiguration.json
 credentials-mc.json
 DerivedData
+.build
