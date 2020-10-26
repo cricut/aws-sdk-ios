@@ -1,6 +1,11 @@
 // swift-tools-version:5.3
 import PackageDescription
 
+let checksums = [
+  "AWSKinesis": "684eba9b21490f73fb9e6fd070c0d34a3e4decdf192794aaf6be7340d7af0028" // AUTO GENERATED
+  "AWSKinesis": "93c09527df975671b73ef30ed5248bf06f6a5db98e58bcc8f4b938457cd1b3c2" // AUTO GENERATED
+]
+
 let package = Package(
     name: "AWSKinesis",
     products: [
@@ -13,12 +18,12 @@ let package = Package(
         .binaryTarget(
             name: "AWSKinesis",
             url: "https://github.com/cricut/aws-sdk-ios/releases/download/2.18.0_kinesis_only/AWSKinesis.xcframework.zip",
-            checksum: "d2237a1701341683c2c4ca0f577fe4c31be9ef32b455407307711dac8baca5ab"
+            checksum: checksums["AWSKinesis"]
         ),
         .binaryTarget(
             name: "AWSCore",
             url: "https://github.com/cricut/aws-sdk-ios/releases/download/2.18.0_kinesis_only/AWSCore.xcframework.zip",
-            checksum: "e9730372c97ec46ded095738f780992e1a9218a195700820bf2fbc35dc339161"
+            checksum: checksums["AWSCore"]
         ),
     ]
 )
